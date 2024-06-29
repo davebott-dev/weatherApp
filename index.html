@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="htmlDark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Weather App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="content">
+    <div id="container">
+
+      <div id="header">
+        <input type="text" id="search">
+        <div id="searchBtn">
+          <img src="search.png" alt="search icon" width="25px">
+        </div>
+      </div>
+
+      <div id="body">
+
+        <img src = "" id="weatherIcon" height="150px">
+        <div class="tempGroup">
+          <div id="tempNum">
+            <div id="temp">
+
+            </div>
+            <div id="tempUnit">
+              °F
+            </div>
+          </div>
+          <div id="location">
+          </div>
+        </div>
+
+        <div id="footer">
+          <div id="humidity">
+            <div id="humidityIcon">
+              <img src="humidityIcon.png" alt="a humidity icon" width="50px">
+            </div>
+            <div class="humidityGroup">
+              <div id="humidityValue">
+              </div>
+              <div id="humidityText">
+                Humidity
+              </div>
+            </div>
+          </div>
+          <div id="wind">
+            <div id="windIcon">
+              <img src="windIcon.png" alt="a wind icon" width="40px">
+            </div>
+            <div class="windGroup">
+              <div id="windValue">
+              </div>
+              <div id="windText">
+                Wind Speed
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="controlBtns">
+      <div class="lightDarkBtn">
+        <button type="button" id="lightDark">Light/Dark Mode</button>
+      </div>
+      <div class="tempChange">
+        <button type="button" id="tempToggle">Celcius/Farenheit</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

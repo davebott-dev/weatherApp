@@ -1,0 +1,162 @@
+:root {
+    --darkBackground: #0B1215;
+    --lightBackground:#F8F8FF;
+    --gradient: rgb(2, 0, 36);
+    --gradientSet: linear-gradient(166deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 106, 1) 0%, rgba(0, 212, 255, 1) 70%);
+    --font: Arial, Helvetica, sans-serif;
+  }
+  
+  .htmlDark {
+    background: var(--darkBackground);
+  }
+  
+  .htmlLight {
+    background: var(--lightBackground);
+  }
+  
+  html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 99vh;
+    gap: 20px;
+  }
+  
+  #container {
+    border-radius: 15px;
+    background: var(--gradient);
+    background: var(--gradientSet);
+    width: 400px;
+    min-width: 400px;
+    height: 500px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+  }
+  
+  #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 15px;
+  }
+  
+  #search {
+    height: 50px;
+    width: 280px;
+    border-radius: 25px;
+    border: none;
+    background: white;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  
+  #searchBtn {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #searchBtn:hover {
+    background: lightgray;
+  }
+  
+  #temp {
+    font-size: 3em;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+  
+  .tempGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 45px;
+  }
+  
+  #tempNum {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  #tempUnit {
+    font-size: 3em;
+    color: white;
+  }
+  
+  #location {
+    font-size: 2em;
+    color: whitesmoke;
+  }
+  
+  #footer {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+  }
+  
+  #humidity,
+  #wind {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  
+  #humidityValue,
+  #windValue {
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+  }
+  
+  #humidityText,
+  #windText {
+    font-size: 1em;
+    color: white;
+  }
+  
+  .humidityGroup,
+  .windGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .controlBtns {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
